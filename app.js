@@ -187,6 +187,11 @@ app.post(
 app.get("/contact/:id", (req, res) => {
   const contact = findContact(req.params.id);
 
+  // Jika Data Contact tidak ditemukan
+  if (!contact) {
+    res.status(404).send("<h1>404</h1>");
+  }
+
   res.render("detail", {
     title: "Halaman Detail " + contact.nama,
     layout: "layouts/main-layout",
