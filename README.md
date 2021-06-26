@@ -13,4 +13,4 @@ Link Tutorial:
 - Clone repository ini.
 - Jalankan `npm install`.
 - Jalankan `npm run start` untuk memulai server.
-- Kunjungi `http://localhost:3000`.
+- Kunjungi `http://localhost:3000`. 
